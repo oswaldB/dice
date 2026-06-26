@@ -39,6 +39,8 @@ Lit `specs/features/` + `specs/screens.md` → produit `specs/workflows.md`.
 - Classe chaque workflow : `frontend-écran` | `frontend-global` | `backend` (avec justification)
 - Frontend par défaut, backend seulement si justifié (DB, SMTP, intégrations externes)
 
++> pour moi il faut rajouter une phase qui est la construction de la base de données. il faut un skill qui list le data model à partir des workflows. regarde sur /rules/flat-files-db-backend.md pour voir le fonctionnement de la db.
+
 ## PHASE 4 — Mockups (screens → HTML statiques)
 
 ### 06. `stedz-spec-mockup-generator`
@@ -58,6 +60,8 @@ Produit `specs/_app/frontend/<écran|global>/workflows/<nom>/specs/spec.md`.
 Produit `specs/_app/backend/workflows/<nom>/specs/spec.md`.
 
 - Même format, justification backend obligatoire dans frontmatter
+
++ il faut impérativement que ces spec.md rappel le data model qui les concernent.
 
 ## PHASE 6 — Validation (par workflow : N scénarios)
 
